@@ -3,12 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyApp.MainPage"
              BackgroundColor="LightBlue">
-        <ContentPage.Resources>
-        <Style TargetType="Button">
-            <Setter Property="BackgroundColor" Value="Blue" />
-            <Setter Property="TextColor" Value="White" />
-        </Style>
-    </ContentPage.Resources>
+
 			 
     <ScrollView>
         <VerticalStackLayout 
