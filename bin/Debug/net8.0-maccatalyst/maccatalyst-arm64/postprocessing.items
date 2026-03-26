@@ -8,7 +8,7 @@
       <dSYMSourcePathExists>false</dSYMSourcePathExists>
       <NoSymbolStrip>true</NoSymbolStrip>
       <dSYMInfoPlistRelativePath>MyApp.app.dSYM\Contents\Info.plist</dSYMInfoPlistRelativePath>
-      <SymbolFile>/Users/ashishkpanwar/Desktop/MyApp/obj/Debug/net8.0-maccatalyst/maccatalyst-arm64/mtouch-symbols.list</SymbolFile>
+      <SymbolFile>/Users/ashishkpanwar/Desktop/MyApp/obj/Debug/net8.0-maccatalyst/mtouch-symbols-maccatalyst-arm64.list</SymbolFile>
       <DSymName>MyApp.app.dSYM</DSymName>
       <SourceProjectPath>/Users/ashishkpanwar/Desktop/MyApp</SourceProjectPath>
       <IsXPCService></IsXPCService>

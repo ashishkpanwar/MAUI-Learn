@@ -1,50 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MyApp.MainPage"
-             BackgroundColor="LightBlue">
+             x:Class="MyApp.Views.MainPage"
+             BackgroundColor="LightBlue"
+             Title="Main Page">
 
-			 
     <ScrollView>
-        <VerticalStackLayout 
-            Spacing="25" 
-            Padding="30,0" 
-            VerticalOptions="Center">
-
-            <Image
-                Source="dotnet_bot.svg"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
-                HorizontalOptions="Center" />
-            <Label 
-                Text="Hello, MAUI Learner!"
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
-                HorizontalOptions="Center" />
-            
-            <Label 
-                Text="Welcome to .NET Multi-platform App UI"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="18"
-                HorizontalOptions="Center" />
-
-            <Label 
-                Text="{Binding Message}"
-                FontSize="20"
-                HorizontalOptions="Center" />
-
-            <Button 
-                x:Name="CounterBtn"
-                Text="Click me again"
-                SemanticProperties.Hint="Counts the number of times you click"
-                HorizontalOptions="Center" />
-            <Button 
-                x:Name="NewButton"
-                Text="Click Me Too!"
-                Command="{Binding ClickMeCommand}"
-                HorizontalOptions="Center" />
+        <VerticalStackLayout Spacing="25" Padding="30,0" VerticalOptions="Center">
+            <Image Source="dotnet_bot.svg"
+                   HeightRequest="200"
+                   HorizontalOptions="Center" />
+            <Label Text="Hello, MAUI Learner!"
+                   FontSize="32"
+                   HorizontalOptions="Center" />
+            <Label Text="Welcome to .NET Multi-platform App UI"
+                   FontSize="18"
+                   HorizontalOptions="Center" />
+            <Label Text="{Binding Message}"
+                   FontSize="20"
+                   HorizontalOptions="Center" />
+            <Button x:Name="CounterBtn"
+                    Text="Click me again"
+                    HorizontalOptions="Center" />
+            <Button x:Name="NewButton"
+                    Text="Click Me Too!"
+                    Command="{Binding ClickMeCommand}"
+                    HorizontalOptions="Center" />
         </VerticalStackLayout>
     </ScrollView>
- 
+
 </ContentPage>

@@ -1,16 +1,20 @@
-﻿using MyApp.ViewModels;
+﻿using System;
+using Microsoft.Extensions.DependencyInjection;
+using MyApp.ViewModels;
+using MyApp.Views;
 
 namespace MyApp;
 
 public partial class App : Application
 {
-    private readonly MainViewModel _mainViewModel;
+    public static IServiceProvider Services { get; private set; } = null!;
 
-    public App(MainViewModel mainViewModel)
+    public App(IServiceProvider services)
     {
         InitializeComponent();
-        _mainViewModel = mainViewModel;
+        Services = services;
 
-        MainPage = new MainPage(_mainViewModel);
+        MainPage = new AppShell();
+		
     }
 }

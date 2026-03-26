@@ -22,6 +22,7 @@ public static class MauiProgram
 
 		// Register ViewModels
 		builder.Services.AddSingleton<MainViewModel>();
+		builder.Services.AddSingleton<LoginViewModel>();
 
 		return builder.Build();
 	}
