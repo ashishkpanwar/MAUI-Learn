@@ -1,0 +1,58 @@
+# .gitignore for .NET MAUI and Visual Studio projects
+
+# Build results
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# VS Code settings
+.vscode/
+
+# Mac system files
+.DS_Store
+
+# Logs
+*.log
+
+# Other common ignores
+*.vspscc
+*.vssscc
+
+# Rider/JetBrains
+.idea/
+*.sln.iml
+
+# Maui build outputs
+**/bin/
+**/obj/
+
+# NuGet
+*.nupkg
+.nuget/
+packages/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Xamarin/MAUI device logs
+*.apk
+*.apks
+*.aab
+*.ipa
+*.app
+*.xcarchive
+*.dSYM
+*.pdb
+
+# Test results
+TestResults/
+
+# Temporary files
+~$*
+*.tmp
+*.temp
